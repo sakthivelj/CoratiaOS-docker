@@ -561,7 +561,7 @@ export default Vue.extend({
         },
         {
           target: '#tour-center-hook',
-          content: `That's it! Now we want you to enjoy your experience with CoratiaOS! Also, don't forget to get in touch
+          content: `That's it! Now we want you to enjoy your experience! Also, don't forget to get in touch
           if you need anything else to improve your journey!`,
           params: {
             enableScrolling: false,
