@@ -5,8 +5,12 @@ This folder contains all necessary files for configuration of the host computer 
 To use it, just run the installation script in your terminal **as root**, like so:
 
 ```bash
-sudo su -c 'curl -fsSL https://raw.githubusercontent.com/bluerobotics/blueos-docker/master/install/install.sh | bash'
+sudo su -c 'curl -fsSL https://raw.githubusercontent.com/sakthivelj/coratiaos-docker/release/install/install.sh | bash'
 ```
+
+
+
+
 
 # Using different versions or custom builds
 To use a different remote or version, you can se the following environment variables:
@@ -19,3 +23,5 @@ sudo su
 # You can also change the install URL to use a different source for files
 curl -fsSL https://raw.githubusercontent.com/patrickelectric/blueos-docker/example-version/install/install.sh | export REMOTE=https://raw.githubusercontent.com/patrickelectric/blueos-docker export VERSION=example-version bash
 ```
+
+sakthivelj/CoratiaOS-docker/install/README.md
