@@ -263,7 +263,7 @@
         <span
           class="build_info"
         >
-          CoratiaOS Version:
+          Coratia Version:
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -283,7 +283,7 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://bluerobotics.com"
+            href="https://coratia.com"
             style="text-decoration:none;"
           >
             Blue Robotics
@@ -442,7 +442,7 @@ export default Vue.extend({
           icon: 'mdi-puzzle',
           route: '/tools/extensions-manager',
           advanced: false,
-          text: 'Manage CoratiaOS extensions',
+          text: 'Manage Coratia extensions',
           beta: true,
         },
         ...foundExtensions,
@@ -455,9 +455,9 @@ export default Vue.extend({
         {
           target: '#tour-center-hook',
           header: {
-            title: 'Welcome to CoratiaOS!',
+            title: 'Welcome to Coratia!',
           },
-          content: `We are happy to have you navigating with us! CoratiaOS provides the
+          content: `We are happy to have you navigating with us! Coratia provides the
           necessary tools to configure your vehicle, check the system status and more.
           Follow this quick tour to get familiar with your brand new onboard system.`,
           params: {
@@ -466,7 +466,7 @@ export default Vue.extend({
         },
         {
           target: '#tour-center-hook',
-          content: 'Connect CoratiaOS to the internet to enable online functionalities.',
+          content: 'Connect Coratia to the internet to enable online functionalities.',
           filter_wifi_connected: true,
           params: {
             enableScrolling: false,
@@ -490,7 +490,7 @@ export default Vue.extend({
         },
         {
           target: '#button-to-vehicle',
-          content: 'This is the main CoratiaOS menu. Here you can access all the running services and system utilities.',
+          content: 'This is the main Coratia menu. Here you can access all the running services and system utilities.',
           params: {
             enableScrolling: false,
             placement: 'right',
@@ -512,7 +512,7 @@ export default Vue.extend({
         },
         {
           target: '#button-to-tools',
-          content: `Here you can find all kinds of tools to improve your CoratiaOS experience.
+          content: `Here you can find all kinds of tools to improve your Coratia experience.
           There are system-diagnosis tools, like network-speed tester and others, all under the Tools menu.`,
           params: {
             enableScrolling: false,
@@ -527,7 +527,7 @@ export default Vue.extend({
         },
         {
           target: '#settings-menu-button',
-          content: 'With the settings button, you can customize your CoratiaOS experience.',
+          content: 'With the settings button, you can customize your Coratia experience.',
           params: {
             enableScrolling: false,
           },
@@ -542,7 +542,7 @@ export default Vue.extend({
         },
         {
           target: '#current-version',
-          content: `You can check the version of CoratiaOS installed here. This version number is particularly important
+          content: `You can check the version of Coratia installed here. This version number is particularly important
           when looking for help.`,
           params: {
             enableScrolling: false,
