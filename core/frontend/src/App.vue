@@ -283,10 +283,10 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://bluerobotics.com"
+            href="https://coratia.com"
             style="text-decoration:none;"
           >
-            Blue Robotics
+            Coratia Technologies
           </a>
         </span>
       </v-container>
