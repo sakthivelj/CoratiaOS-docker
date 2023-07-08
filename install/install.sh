@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set desired version to be installed
-VERSION="${VERSION:-master}"
+VERSION="${VERSION:-release}"
 DOCKER_VERSION="${DOCKER_VERSION:-${VERSION}}"
 GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-sakthivelj/CoratiaOS-docker}
 REMOTE="${REMOTE:-https://raw.githubusercontent.com/${GITHUB_REPOSITORY}}"
