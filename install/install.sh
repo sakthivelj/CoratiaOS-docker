@@ -3,7 +3,7 @@
 # Set desired version to be installed
 VERSION="${VERSION:-master}"
 DOCKER_VERSION="${DOCKER_VERSION:-${VERSION}}"
-GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-bluerobotics/blueos-docker}
+GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-sakthivelj/CoratiaOS-docker}
 REMOTE="${REMOTE:-https://raw.githubusercontent.com/${GITHUB_REPOSITORY}}"
 ROOT="$REMOTE/$VERSION"
 
@@ -104,7 +104,7 @@ NECESSARY_SPACE_MB=1024
 
 # Check for docker and install it if not found
 echo "Checking for docker."
-## Docker uses VERSION environment variable to set the docker version,
+## Docker uses  environment variable to set the docker ,
 ## We unset this variable for this command to avoid conflicts with blueos version
 docker --version || curl -fsSL https://get.docker.com | env -u VERSION sh || (
     echo "Failed to start docker, something may be wrong."
@@ -166,8 +166,8 @@ sed -i '/noipv4ll/d' /etc/dhcpcd.conf
 sed -i '$ a noipv4ll' /etc/dhcpcd.conf
 
 echo "Downloading bootstrap"
-BLUEOS_BOOTSTRAP="bluerobotics/blueos-bootstrap:$DOCKER_VERSION" # Use current version
-BLUEOS_CORE="bluerobotics/blueos-core:$DOCKER_VERSION" # We don't have a stable tag yet
+BLUEOS_BOOTSTRAP="sakthiveljayabal/blueos-bootstrap:release" # Use current version
+BLUEOS_CORE="sakthiveljayabal/blueos-core:release" # We don't have a stable tag yet
 BLUEOS_FACTORY="bluerobotics/blueos-core:factory" # used for "factory reset"
 
 docker pull $BLUEOS_BOOTSTRAP
