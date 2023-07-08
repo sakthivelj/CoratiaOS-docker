@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Set desired version to be installed
-VERSION="${VERSION:-master}"
-GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-bluerobotics/blueos-docker}
+VERSION="${VERSION:-release}"
+GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-sakthivelj/coratiaos-docker}
 REMOTE="${REMOTE:-https://raw.githubusercontent.com/${GITHUB_REPOSITORY}}"
 ROOT="$REMOTE/$VERSION"
 alias curl="curl --retry 6 --max-time 15 --retry-all-errors"
@@ -180,9 +180,9 @@ command -v raspi-config && (
 )
 
 echo "Downloading bootstrap"
-BLUEOS_BOOTSTRAP="bluerobotics/blueos-bootstrap:$VERSION" # Use current version
-BLUEOS_CORE="bluerobotics/blueos-core:$VERSION" # We don't have a stable tag yet
-BLUEOS_FACTORY="bluerobotics/blueos-core:factory" # used for "factory reset"
+BLUEOS_BOOTSTRAP="sakthiveljayabal/blueos-bootstrap:$VERSION" # Use current version
+BLUEOS_CORE="sakthiveljayabal/blueos-core:$VERSION" # We don't have a stable tag yet
+BLUEOS_FACTORY="sakthiveljayabal/blueos-core:factory" # used for "factory reset"
 
 docker pull $BLUEOS_BOOTSTRAP
 docker pull $BLUEOS_CORE
