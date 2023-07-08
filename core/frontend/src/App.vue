@@ -490,7 +490,7 @@ export default Vue.extend({
         },
         {
           target: '#button-to-vehicle',
-          content: 'This is the main CoratiaOS menu. Here you can access all the running services and system utilities.',
+          content: 'This is the main CoratiaOS menu. Here you can access all the running services & system utilities.',
           params: {
             enableScrolling: false,
             placement: 'right',
@@ -562,7 +562,7 @@ export default Vue.extend({
         {
           target: '#tour-center-hook',
           content: `That's it! Now we want you to enjoy your experience with CoratiaOS! Also, don't forget to get in touch
-          if you need anything else to improve your journey! Happy exploring!`,
+          if you need anything else to improve your journey!`,
           params: {
             enableScrolling: false,
           },
